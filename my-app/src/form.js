@@ -10,12 +10,35 @@ import {Form, Field, withFormik} from "formik";
 
 
 
-const UserForm = ({ errors, touched,}) => {
+const UserForm = ({ errors, touched}) => {
        
+    
+    return(
+<div className="userform">
+<h1>Enter User Data Here</h1>
+<Form>
+<Field type="text" name="name" placeholder="Please enter name">
+{/* valadation stuff */}
+</Field>
+<Field type="text" email="email" placeholder="Please enter E-mail">
+{/* valadation stuff */}
+</Field>
+<Field type="password" password="name" placeholder="Enter Password">
+{/* valadation stuff */}
+</Field>
+
+
+
+
+</Form>
+</div>
+
+
+    );
     
 }
 
-export default UserForm
+export default UserForm;
 
 
 
